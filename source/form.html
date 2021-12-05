@@ -88,18 +88,160 @@
   <!-- Block 2: Основное содержание страницы -->
   <main class="page-main main-container">
 
-<h1 class="visually-hidden">Каталог товаров магазина "Мишка" – милые игрушки ручной работы</h1>
+<h1 class="visually-hidden">Форма заказа товаров магазина "Мишка"</h1>
 
-<!-- Section #: Header -->
+<section class="heeader">
+  <div class="container">
+    <h2 class="header__title">Вязание на заказ</h2>
+  </div>
+</section>
 
+<section class="order-form">
+  <div class="container">
+    <p class="ordeer-form__description">
+      Мы будем рады воплотить в жизнь
+      ваши&nbsp;пожелания! Заполните простую
+      форму&nbsp;заказа и мы свяжемся с вами,
+      чтобы&nbsp;уточнить детали.
+    </p>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="form__heading visually-hidden">Форма заказа</h2>
 
+      <!-- Radio-buttons  -->
+          
+    <fieldset class="form__form-group"> 
+      <legend class="form__form-title">Тип</legend>
+        <ul class="form__form-list">
+          <li class="form__form-item">
+            <label class="form__form-control">
+              <input class="form__form-input form-form-input--radio" type="radio" name="type-of-toy" value="interior-accessory" checked>
+              <span class="form__form-label">Аксессуар для интерьера</span>
+            </label>
+          </li>
+          <li class="form__form-item">
+            <label class="form__form-control">
+              <input class="form__form-input form-form-input--radio" type="radio" name="type-of-toy" value="baby-toys">
+              <span class="form__form-label">Детская игрушка</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+
+  <!-- Checkboxes  -->
+
+  <fieldset class="form__form-group"> 
+    <legend class="form__form-title">Цвет</legend>
+      <ul class="form__form-list">
+        <li class="form__form-item">
+          <label class="form__form-control">
+            <input class="form__form-input form-form-input--сheckbox" type="checkbox" name="color" value="white" checked>
+            <span class="form__form-label">Белый</span>
+          </label>
+        </li>
+        <li class="form__form-item">
+          <label class="form__form-control">
+            <input class="form__form-input form-form-input--сheckbox" type="checkbox" name="color" value="grey" checked>
+            <span class="form__form-label">Серый</span>
+          </label>
+        </li>
+        <li class="form__form-item">
+          <label class="form__form-control">
+            <input class="form__form-input form-form-input--сheckbox" type="checkbox" name="color" value="tiffany">
+            <span class="form__form-label">«Тиффани»</span>
+          </label>
+        </li>
+        <li class="form__form-item">
+          <label class="form__form-control">
+            <input class="form__form-input form-form-input--сheckbox" type="checkbox" name="color" value="black">
+            <span class="form__form-label">Черный</span>
+          </label>
+        </li>
+        <li class="form__form-item">
+          <label class="form__form-control">
+            <input class="form__form-input form-form-input--сheckbox" type="checkbox" name="color" value="rose">
+            <span class="form__form-label">Розовый</span>
+          </label>
+        </li>
+        <li class="form__form-item">
+          <label class="form__form-control">
+            <input class="form__form-input form-form-input--сheckbox" type="checkbox" name="color" value="orange">
+            <span class="form__form-label">Оранжевый</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </fieldset>
+
+  <!-- Registration-Form -->
+  
+  <fieldset class="form__form-group"> 
+    <legend class="form__form-title">ФИО</legend>
+    <ul class="form__form-list">
+      <li class="form__form-item">
+        <label class="form__form-control">Имя:
+          <input class="form__form-input form__form-input--text" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+        </label>
+      </li>
+      <li class="form__form-item">
+        <label class="form__form-control">Фамилия:
+          <input class="form__form-input form__form-input--text" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+        </label>
+      </li>
+      <li class="form__form-item">
+        <label class="form__form-control">Отчество:
+          <input class="form__form-input form__form-input--text" type="text" name="first-name" placeholder="Отчество, если желаете">
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <!-- Phone-Form -->  
+
+  <fieldset class="form__form-group"> 
+    <legend class="form__form-title">Тел</legend>
+    <ul class="form__form-list">
+      <li class="form__form-item">
+        <label class="form__form-control">
+          <input class="form__form-input form__form-input--tel" type="tel" name="user-phone-number" placeholder="+7 XXX XXX XX XX*" pattern="[0-9]{7,}" minlength="7">
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <!-- E-Mail-Form -->  
+
+  <fieldset class="form__form-group"> 
+    <legend class="form__form-title">E-MAIL</legend>
+    <ul class="form__form-list">
+      <li class="form__form-item">
+        <label class="form__form-control">
+          <input class="form__form-input form__form-input--email" type="email" name="user-email" placeholder="Ваш E-Mail*" minlength="9" maxlength="35" required>
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+    <!-- Textarea-Form -->  
+
+    <fieldset class="form__form-group"> 
+      <legend class="form__form-title">ДОП</legend>
+        <textarea class="form__form-input form__form-input--textarea" name="additional-wishes" placeholder="Опишите все ваши пожелания к заказу" rows="5" cols="33"></textarea>
+    </fieldset>
+
+    <p class="form__form-required-info">*Поля обязательны для заполнения</p>
+    <button class="link-contact-button form__form-button" type="submit">Отправить заказ</button>
+  </form>
+
+  </div>
+</section>
 
 <!-- Block 3: Подвал -->
 <footer class="footer">
   <h2 class="visualy-hidden">Подвал</h2>
   <div class="container">
     <div class="footer__logo logo">
-      <a href="#" class="logo__link">
+      <a href="index.html" class="logo__link">
         <img class="logo__logotypy-image" src="img/logos/mishka-logo-mobile.svg" alt="Логотип магазина Мишка."
               width="102" height="34">
       </a>
