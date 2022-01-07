@@ -1,0 +1,138 @@
+// .featured {}
+
+// .featured__header {
+//   font-family: "Open Sans", sans-serif;
+//   font-style: normal;
+//   font-weight: 900;
+//   font-size: 25px;
+//   line-height: 120%;
+//   color: #000000;
+// }
+
+// .featured__subtitle {
+//   font-family: "Open Sans", sans-serif;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 17px;
+//   line-height: 118%;
+//   text-transform: uppercase;
+//   color: #63D1BB;
+// }
+
+// .featured__description {
+//   font-family: "Open Sans", sans-serif;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 15px;
+//   line-height: 160%;
+//   color: #444444;
+// }
+
+// .featured__table {}
+
+// .featured-table {}
+
+// .featured-table__caption {}
+
+// .featured__table-row {}
+
+// .featured__table-heading {
+//   font-family: "Open Sans", sans-serif;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 15px;
+//   line-height: 133%;
+//   color: #444444;
+//   text-align: left;
+// }
+
+// .featured__table-description {
+//   font-family: "Open Sans", sans-serif;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 15px;
+//   line-height: 133%;
+//   color: #444444;
+// }
+
+// .featured__product-image {}
+
+// .featured__product-price {
+//   font-family: "Open Sans", sans-serif;
+//   font-style: normal;
+//   font-weight: 900;
+//   font-size: 17px;
+//   line-height: 141%;
+//   text-align: center;
+//   color: #444444;
+// }
+
+// .featured__button {
+//   width: 260px;
+//   height: 52px;
+//   background: #ffffff;
+//   border: 2px solid #444444;
+//   margin-bottom: 42px;
+//   padding-top: 16px;
+//   padding-right: 70px;
+//   padding-bottom: 16px;
+//   padding-left: 70px;
+//   font-family: "Open Sans", sans-serif;
+//   font-style: normal;
+//   font-weight: 900;
+//   font-size: 18px;
+//   line-height: 111%;
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: #444444;
+// }
+
+// .featured-table {
+//   border-collapse: collapse;
+//   margin-bottom: 27px;
+// }
+
+// .featured__table-row {
+//   border-bottom: 1px solid $color-border;
+// }
+
+// .featured__table-heading {
+//   font-size: 15px;
+//   font-weight: 400;
+//   color: $color-text-regular;
+//   text-align: left;
+//   padding-right: 20px;
+// }
+
+// .featured__table-description {
+//   font-size: 15px;
+//   font-weight: 400;
+//   color: $color-text-regular;
+//   text-align: left;
+// }
+
+
+.featured__subtitle {
+  line-height: 20px;
+  color: $color-accent;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.featured__description {
+  font-size: 15px;
+  font-weight: 400;
+  color: $color-text-regular;
+}
+
+.featured__img {
+  margin: 0;
+}
+
+.featured__product-price {
+  padding: 25px 0;
+  color: $color-text-regular;
+  text-align: center;
+}

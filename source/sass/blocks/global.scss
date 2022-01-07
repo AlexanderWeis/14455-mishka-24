@@ -1,0 +1,26 @@
+// $one: red;
+// $two: yellow;
+// $three: green;
+
+.advantages {
+  color: $color;
+  @media (min-width: 768px) {
+    color: $two;
+  }
+  @media (min-width: 1200px) {
+    color:$three;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 99.9vh;
+  display: flex;
+}

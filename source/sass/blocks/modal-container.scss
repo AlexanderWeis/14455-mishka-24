@@ -1,0 +1,44 @@
+.modal-container {
+  display: none;
+  position: fixed;
+  min-width: 320px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal {
+  position: absolute;
+  top: 30%;
+  background-color: $color-white;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-form__radio-heading {
+  @include fonts($main-font, 15px, 30px, 400);
+}
+
+.modal-form__button {
+  @include fonts($main-font, 17px, 16px, 700, $color-white);
+  background-color: $color-accent;
+  border: none;
+}
+
+.modal-form__label {
+  line-height: 16px;
+  color: $color-text-regular;
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal--closen {
+  display: none;
+}

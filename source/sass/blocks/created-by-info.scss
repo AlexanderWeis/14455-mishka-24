@@ -1,0 +1,9 @@
+.created-by-info {
+  display: flex;
+  justify-content: center;
+}
+
+.created-by-info__link {
+  @include fonts($main-font, 19px, 18px, 700, $color-text-bold);
+  text-decoration: none;
+}
