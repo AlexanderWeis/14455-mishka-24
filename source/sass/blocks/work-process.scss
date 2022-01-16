@@ -1,17 +1,35 @@
+.work-process {
+  border: solid 1px $color-border;
+  width: 320px;
+  margin-bottom: 58px;
+}
+
 .work-process__heading {
-  font: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
   position: relative;
-  padding-left: 57px;
+  margin-left: 91px;
 
   &::before {
     @include pseudo(32px, 22px);
     top: 10px;
-    left: 10px;
-    background: url("../../img/icons/video.svg") no-repeat;
+    left: -60px;
+    background: url("../img/icons/video.svg") no-repeat;
   }
 }
 
 .work-process__text {
   @include fonts($main-font, 13px, 24px, 400);
   padding-left: 34px;
+  margin-bottom: 41px;
+}
+
+.work-process__button {
+  margin-bottom: 100px;
 }

@@ -1,59 +1,42 @@
 // .testimonials {}
 
-// .testimonials__heading {
-//   font-family: "Open Sans", sans-serif;
-//   font-style: normal;
-//   font-weight: 900;
-//   font-size: 25px;
-//   line-height: 30px;
-//   display: flex;
-//   align-items: center;
-//   color: #000000;
-// }
-
-// .testimonials__text {
-//   font-family: "Open Sans", sans-serif;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 15px;
-//   line-height: 30px;
-//   display: flex;
-//   align-items: center;
-//   color: #444444;
-// }
-
-// .testimonials__information-about-author {
-//   font-family: "Open Sans", sans-serif;
-//   font-style: normal;
-//   font-weight: 900;
-//   font-size: 17px;
-//   line-height: 141%;
-//   /* or 141% */
-
-//   display: flex;
-//   align-items: center;
-
-//   color: #000000;
-// }
-
-// .testimonials__author-instagram-nickname {
-//   font-family: "Open Sans", sans-serif;
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 17px;
-//   line-height: 176%;
-//   display: flex;
-//   align-items: center;
-//   color: #444444;
-// }
-
-
-.testimonials__list-item {
-  margin: 0;
+.testimonials__heading {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000000;
 }
 
 .testimonials__text {
-  @include fonts($main-font, 15px, 30px, 400);
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #444444;
+  // @include fonts($main-font, 15px, 30px, 400);
+}
+
+.testimonials__information-about-author {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 141%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.testimonials__list-item {
+  margin: 0;
+  display: block;
 }
 
 .testimonials__author-name {
@@ -61,12 +44,35 @@
 }
 
 .testimonials__author-instagram-nickname {
-  line-height: 30px;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 176%;
+  display: flex;
+  align-items: center;
+  color: #444444;
 }
 
 .testimonials__slider-control {
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 38px;
 }
 
+.testimonials__navigation-button--current {
+  display: block;
+}
+
+.testimonials__navigation-button {
+  width: 130px;
+  height: 52px;
+  background: url("../img/icons/huge-arrow-left.svg") no-repeat;
+  background-position: center center;
+  border: 1px solid $color-border;
+}
+
+.testimonials__navigation-button--next {
+  transform: rotate(180deg);
+  border-right: none;
+}

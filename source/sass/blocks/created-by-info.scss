@@ -1,9 +1,22 @@
 .created-by-info {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 57px;
+  // margin-bottom: 32px;
 }
 
 .created-by-info__link {
+  // font-family: "Open Sans", sans-serif;
+  // font-style: normal;
+  // font-weight: bold;
+  // font-size: 19px;
+  // line-height: 95%;
+  // display: flex;
+  // align-items: center;
+  // color: #000000;
+  // margin-bottom: 32px;
   @include fonts($main-font, 19px, 18px, 700, $color-text-bold);
   text-decoration: none;
 }

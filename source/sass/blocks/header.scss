@@ -1,108 +1,79 @@
-// .header {
-//   min-width: 320px;
-//   min-height: 506px;
-//   font-family: "Open Sans", sans-serif;
-//   font-style: normal;
-//   font-weight: 900;
-//   font-size: 27px;
-//   line-height: 111%;
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-//   color: #000000;
-//   background-image: url(../../img/content/hero-mobile.jpg);
-//   background-repeat: no-repeat;
-//   background-size: auto;
-//   margin-bottom: 31px;
-// }
-
-// .header__title {
-//   margin-top: 73px;
-//   margin-bottom: 120px;
-//   font-family: "Open Sans", sans-serif;
-//   font-style: normal;
-//   font-weight: 900;
-//   font-size: 27px;
-//   line-height: 111%;
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-//   color: #000000;
-// }
-
-// .header__list {
-//   padding: 0;
-//   margin: 0;
-//   list-style-type: none;
-//   outline: 5px solid blue;
-//   outline-offset: -5px;
-// }
-
-// .header__list-item {
-//   display: block;
-//   height: 103px;
-//   outline: 5px solid green;
-//   outline-offset: -5px;
-// }
-// .header__link {
-//   font-family: "Open Sans", sans-serif;
-//   font-style: normal;
-//   font-weight: 900;
-//   font-size: 19px;
-//   line-height: 126%;
-//   display: flex;
-//   align-items: center;
-//   color: #ffffff;
-//   margin-top: 24px;
-//   margin-right: auto;
-//   margin-bottom: 31px;
-//   margin-left: 30px;
-// }
-// .header__link--light-green {
-//   background-color: #63d1bb;
-// }
-
-// .header__link--dark-green {
-//   background-color: #56c3b2;
-// }
-
-
 .header {
-  margin-bottom: 31px;
-  background-color: $color-decoration-wave;
+  // margin-bottom: 31px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 111%;
+  display: block;
+  text-align: center;
+  color: #000000;
+  // background-image: url("../img/content/hero-mobile.jpg");
+  // background-repeat: no-repeat;
+  // background-size: auto;
 }
 
 .header__title {
-  padding: 73px 0 120px;
+  margin-top: 0;
+  margin-bottom: 17px;
   font-size: 27px;
+  line-height: 111%;
+  align-items: center;
+  color: #000000;
+  background-color: $color-decoration-wave;
+  padding: 73px 22px;
+  width: 320px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   text-align: center;
 }
 
 .header__title--image {
-  background-image: url("../../img/content/hero-mobile.jpg");
+  background-image: url("../img/content/hero-mobile.jpg");
   background-position: 40% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
+  width: 320px;
 }
 
 .header__list {
   @include lists();
+  padding: 0;
+  margin: 0;
+  width: 320px;
 }
+
+// .header__list-item {
+//   @include lists();
+//   width: 320px;
+// }
 
 .header__link {
   display: block;
-  padding: 24px 132px 31px 30px;
+  padding-top: 24px;
+  padding-right: 132px;
+  padding-bottom: 31px;
+  padding-left: 30px;
   font-size: 19px;
   color: $color-white;
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 126%;
+  align-items: center;
 }
 
 .header__link--interior {
-  background: url("../../img/icons/interior.svg.png") no-repeat 90% 40%;
+  background: url("../img/icons/interior.svg.png") no-repeat 90% 40%;
+  width: 100%;
 }
 
 .header__link--toy {
-  background: url("../../img/icons/toy-svg.svg") no-repeat 90% 40%;
+  background: url("../img/icons/toy-svg.svg") no-repeat 90% 40%;
+  width: 100%;
 }
 
 .header__item:first-child {
@@ -111,4 +82,27 @@
 
 .header__item:last-child {
   background-color: $color-accent-dark;
+}
+
+.header__link--light-green {
+  background-color: #63d1bb;
+}
+
+.header__link--dark-green {
+  background-color: #56c3b2;
+}
+
+.header__heading {
+  background-color: $color-decoration-wave;
+  padding: 73px 42px;
+  width: 320px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
 }

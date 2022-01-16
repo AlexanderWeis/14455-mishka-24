@@ -1,0 +1,53 @@
+.product-card {
+  border: solid 1px $color-border;
+  margin-bottom: 30px;
+}
+
+.product-card__link {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card__item-description {
+  @include fonts($main-font, 13px, 30px, 400, $color-text-regular);
+  margin: 0;
+}
+
+.product-card__price {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.product-card__description {
+  padding: 0 28px;
+}
+
+.product-card__cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+
+.product-card__button {
+  border: none;
+  background-color: transparent;
+}
+
+.product-card__img {
+  margin-bottom: 28px;
+}

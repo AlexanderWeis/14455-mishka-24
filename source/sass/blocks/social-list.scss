@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid $color-footer-mobile-line;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .social-list__item:not(:last-child) {

@@ -1,40 +1,8 @@
-// .footer {
-//   min-width: 320px;
-//   min-height: 160px;
-//   background-color: $color-wave-decorative; // #f1f1f1;
-// }
-
-// .footer__logo {
-//   display: none;
-// }
-
-// .social-list {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   list-style-type: none;
-//   justify-content: space-between;
-// }
-// .created-by-info {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-// }
-
-// .created-by-info__link {
-//   font-family: "Open Sans", sans-serif;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 19px;
-//   line-height: 95%;
-//   display: flex;
-//   align-items: center;
-//   color: #000000;
-//   margin-bottom: 32px;
-// }
-
 .footer {
-  background-color: color-decoration-wave;
+  background-color: $color-decoration-wave;
+  padding-top: 25px;
+  padding-bottom: 32px;
+  width: 320px;
 }
 
 .footer__logo {

@@ -12,8 +12,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -65px;
+    left: 260px;
     width: 20px;
     height: 2px;
     background-color: $color-text-bold;
@@ -24,8 +24,8 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 65px;
+    left: 260px;
     width: 20px;
     height: 2px;
     background-color: $color-text-bold;
@@ -33,7 +33,7 @@
   }
 
   &:hover::after {
-    top: 5px;
+    top: 15px;
     width: 21px;
     transform: rotate(45deg);
     box-shadow: none;
@@ -51,8 +51,9 @@
 }
 
 .main-navigation__wrapper {
-  display: block;
+  // display: block;
   background-color: $color-white;
+  display: none; // Отключение меню в моб. версии
 }
 
 .main-navigation__delivery {

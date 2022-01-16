@@ -23,12 +23,15 @@ $color-modal-border: #c6c6c6;
 $color-white: #ffffff;
 
 $color-decoration-wave: #f1f1f1;
-$color-decoration-flag-stock: #231F20;
+$color-decoration-flag-stock: #231f20;
 $color-decoration-list-icon: #149080;
 $color-decoration-map-letter: #6bc6b3;
 $color-background-top-menu: #f9f9f9;
 
-
 // Fonts
 
-$main-font: "Open Sans", "Arial", sans-serif;
+$main-font: "Open Sans", sans-serif;
+$fontStyle: normal;
+$fontWeight: 400;
+$fontWeightBold: 700;
+$fontSize: 14px;
