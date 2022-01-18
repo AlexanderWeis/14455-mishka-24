@@ -48,12 +48,84 @@
 
 .main-navigation__list {
   @include lists();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-navigation__list-item {
+  padding-top: 28px;
+  padding-bottom: 27px;
+  width: 320px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    color: #000000;
+    background-color: $color-accent;
+  }
+
+  &:focus {
+    color: #000000;
+  }
+
+  &:active {
+    color: #000000;
+  }
+}
+
+.main-navigation-user-list {
+  @include lists();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-navigation-user-list__link {
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  width: 320px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    color: #000000;
+    background-color: $color-accent;
+  }
+
+  &:focus {
+    color: #000000;
+  }
+
+  &:active {
+    color: #000000;
+  }
+}
+
+.main-navigation__link {
+  text-decoration: none;
+  color: #000000;
 }
 
 .main-navigation__wrapper {
   // display: block;
   background-color: $color-white;
-  display: none; // Отключение меню в моб. версии
+  display: block; // Отключение меню в моб. версии
 }
 
 .main-navigation__delivery {
