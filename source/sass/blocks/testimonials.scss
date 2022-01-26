@@ -1,37 +1,17 @@
 // .testimonials {}
 
 .testimonials__heading {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 25px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  color: #000000;
+  @include fonts($main-font, 25px, 30px, $fontWeightBold, $color-text-bold);
 }
 
 .testimonials__text {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 30px;
+  @include fonts($main-font, 15px, 30px, $fontWeight, $color-text-regular);
   display: flex;
   align-items: center;
-  color: #444444;
-  // @include fonts($main-font, 15px, 30px, 400);
 }
 
 .testimonials__information-about-author {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 17px;
-  line-height: 141%;
-  display: flex;
-  align-items: center;
-  color: #000000;
+  @include fonts($main-font, 17px, 141%, $fontWeightBold, $color-text-bold);
 }
 
 .testimonials__list-item {
@@ -44,14 +24,9 @@
 }
 
 .testimonials__author-instagram-nickname {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 176%;
+  @include fonts($main-font, 17px, 176%, $fontWeight, $color-text-regular);
   display: flex;
   align-items: center;
-  color: #444444;
 }
 
 .testimonials__slider-control {
@@ -65,8 +40,8 @@
 }
 
 .testimonials__navigation-button {
-  width: 130px;
   height: 52px;
+  width: 150px;
   background: url("../img/icons/huge-arrow-left.svg") no-repeat;
   background-position: center center;
   border: 1px solid $color-border;

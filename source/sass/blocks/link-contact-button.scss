@@ -1,15 +1,16 @@
 .link-contact-button {
-  @include fonts($main-font, 18px, 20px, 700, $color-text-regular);
+  @include fonts($main-font, 18px, 20px, $fontWeightBold, $color-text-regular);
   display: block;
   padding: 16px 38px;
   margin-bottom: 39px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  border: 2px solid $color-text-regular;
 }
 
 .link-contact-button--form {
-  @include fonts($main-font, 18px, 20px, 700, $color-text-regular);
+  @include fonts($main-font, 18px, 20px, $fontWeightBold, $color-text-regular);
   display: block;
   padding: 16px 38px;
   margin-bottom: 73px;
@@ -17,24 +18,3 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-
-// .link-contact-button {
-//   background: #ffffff;
-//   border: 2px solid #444444;
-//   box-sizing: border-box;
-//   font-family: "Open Sans", sans-serif;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 18px;
-//   line-height: 111%;
-//   display: flex;
-//   align-items: center;
-//   text-align: 400;
-//   text-transform: uppercase;
-//   color: #444444;
-//   padding-top: 38px;
-//   padding-right: 16px;
-//   padding-bottom: 38px;
-//   padding-left: 16px;
-//   margin-bottom: 39px;
-// }

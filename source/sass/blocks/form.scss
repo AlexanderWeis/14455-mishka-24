@@ -11,49 +11,98 @@
   margin-bottom: 30px;
 }
 
+.form__form-title--greenline {
+  position: relative;
+}
+
+.form__form-title--greenline::before {
+  position: absolute;
+  content: "";
+  right: -210px;
+  top: 7px;
+  height: 2px;
+  width: 160px;
+  z-index: 10;
+  background-color: $color-interactive-elements;
+  margin-left: 10px;
+}
+
 .form__form-list {
   @include lists();
 }
 
 .form__form-control {
-  line-height: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
+  @include fonts($main-font, 17px, 18px, $fontWeightBold, $color-text-bold);
   align-items: center;
-  color: #000000;
   margin-bottom: 17px;
+}
+
+.form__form-control--underline {
+  position: relative;
+}
+
+.form__form-control--underline::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 80px;
+  height: 1px;
+  width: 100%;
+  z-index: 10;
+  background-color: $color-text-bold;
 }
 
 .form__form-input {
   border: none;
 
   &::placeholder {
-    @include fonts($main-font, 17px, 18px, 400, $color-text-bold);
+    @include fonts($main-font, 17px, 18px, $fontWeight, $color-text-bold);
     opacity: 0.3;
-    padding-left: 17px;
+    margin-top: 17px;
     padding-right: 17px;
     padding-top: 17px;
   }
 }
-
+// Цвет заполняемого текста в сообщении
 .form__form-input--textarea {
+  @include fonts($main-font, 19px, 18px, $fontWeight, $color-text-bold);
   min-height: 142px;
   width: 100%;
   border: 2px solid $color-text-bold;
+  padding: 17px;
+}
+// Цвет заполняемого текста в формах
+.form__form-input--text {
+  @include fonts($main-font, 19px, 18px, $fontWeight, $color-text-regular);
+  padding-top: 17px;
+  margin-bottom: 39px;
+  position: relative;
+}
+
+.form__form-input--text::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 100px;
+  background-color: $color-text-bold;
 }
 
 .form__form-input[type="text"] {
   width: 100%;
 }
 
+// Цвет заполняемого текста в телефоне
 .form__form-input--tel {
+  @include fonts($main-font, 19px, 18px, $fontWeight, $color-text-regular);
   width: 100%;
   background: url("../img/icons/phone.svg") no-repeat right;
 }
 
+// Цвет заполняемого текста в электропочте
 .form__form-input--email {
+  @include fonts($main-font, 19px, 18px, $fontWeight, $color-text-regular);
   width: 100%;
   background: url("../img/icons/mail.svg") no-repeat right;
 }
@@ -63,25 +112,20 @@
 }
 
 .form__form-required-info {
-  @include fonts($main-font, 14px, 16px, 400);
+  @include fonts($main-font, 14px, 16px, $fontWeight);
   margin-bottom: 30px;
 }
 
 .form__form-label {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
+  @include fonts($main-font, 17px, 18px, $fontWeightBold, $color-text-bold);
   align-items: center;
-  color: #000000;
   margin-left: 26px;
 }
 
 .form__form-input--radio {
   width: 42px;
   height: 42px;
-  border: 2px solid #444444;
+  border: 2px solid $color-text-regular;
   border-radius: 50%;
   margin-bottom: 11px;
 }
@@ -93,22 +137,19 @@
 .form__form-input--radio:checked {
   width: 42px;
   height: 42px;
-  border: 4px solid #62d1ba;
+  border: 4px solid $color-interactive-elements;
+
   border-radius: 50%;
 }
 
 .form__form-input--сheckbox {
   width: 38px;
   height: 38px;
-  border: 2px solid #444444;
+  border: 2px solid $color-text-regular;
   margin-bottom: 23px;
 }
 
 
 .form__form-input--сheckbox:checked {
-  background-color: #ffffff;
-}
-
-.form__form-item {
-  width: 320px;
+  background-color: $color-white;
 }

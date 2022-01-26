@@ -1,0 +1,4 @@
+.email-link {
+  @include fonts($main-font, 14px, 30px, $fontWeight, $color-text-regular);
+  text-decoration: none;
+}

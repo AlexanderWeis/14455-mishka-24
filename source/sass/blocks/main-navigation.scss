@@ -1,9 +1,13 @@
 .main-navigation {
   margin-left: auto;
+  position: relative;
 }
 
 .main-navigation__toggle {
-  position: relative;
+  position: absolute;
+  content: "";
+  left: 215px;
+  top: -50px;
   width: 20px;
   height: 14px;
   border: none;
@@ -12,8 +16,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: -65px;
-    left: 260px;
+    top: 0;
+    left: 0;
     width: 20px;
     height: 2px;
     background-color: $color-text-bold;
@@ -24,8 +28,8 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 65px;
-    left: 260px;
+    bottom: 0;
+    left: 0;
     width: 20px;
     height: 2px;
     background-color: $color-text-bold;
@@ -33,14 +37,18 @@
   }
 
   &:hover::after {
-    top: 15px;
+    content: "";
+    position: absolute;
+    top: 0;
     width: 21px;
     transform: rotate(45deg);
     box-shadow: none;
   }
 
   &:hover::before {
-    top: 5px;
+    content: "";
+    position: absolute;
+    top: 0;
     width: 21px;
     transform: rotate(-45deg);
   }
@@ -48,78 +56,93 @@
 
 .main-navigation__list {
   @include lists();
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .main-navigation__list-item {
-  padding-top: 28px;
-  padding-bottom: 27px;
-  width: 320px;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
+  @include fonts($main-font, 17px, 24px, $fontWeightBold, $color-text-bold);
+  width: 100%;
+  position: relative;
+  text-align: left;
   text-decoration: none;
 
   &:hover {
-    color: #000000;
+    color: $color-text-bold;
     background-color: $color-accent;
   }
 
   &:focus {
-    color: #000000;
+    color: $color-text-bold;
   }
 
   &:active {
-    color: #000000;
+    color: $color-text-bold;
   }
+}
+
+.main-navigation__list-item::after {
+  position: absolute;
+  content: "";
+  border: 1px solid $color-footer-mobile-line;
+  height: 1px;
+  width: 180px;
+  top: 0;
+  left: 44px;
 }
 
 .main-navigation-user-list {
   @include lists();
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
 
+.main-navigation-user-list__list-item {
+  position: relative;
+}
+
+.main-navigation-user-list__list-item::after {
+  position: absolute;
+  content: "";
+  border: 1px solid $color-footer-mobile-line;
+  height: 1px;
+  width: 180px;
+  top: 0;
+  left: 44px;
+}
+
 .main-navigation-user-list__link {
+  @include fonts($main-font, 17px, 24px, $fontWeightBold, $color-text-bold);
   display: block;
   padding-top: 28px;
   padding-bottom: 27px;
-  width: 320px;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
+  padding-left: 55px;
+  width: 260px;
+  text-align: left;
   text-decoration: none;
 
   &:hover {
-    color: #000000;
+    color: $color-text-bold;
     background-color: $color-accent;
   }
 
   &:focus {
-    color: #000000;
+    color: $color-text-bold;
   }
 
   &:active {
-    color: #000000;
+    color: $color-text-bold;
   }
 }
 
 .main-navigation__link {
   text-decoration: none;
-  color: #000000;
+  color: $color-text-bold;
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  padding-left: 55px;
 }
 
 .main-navigation__wrapper {
@@ -129,8 +152,24 @@
 }
 
 .main-navigation__delivery {
+  @include fonts($main-font, 15px, 141%, $fontWeight, $color-text-regular);
   font-size: 15px;
   font-weight: 400;
   color: $color-text-regular;
   text-decoration: none;
+  display: none;
+}
+
+.main-navigation-user-list__icon-search {
+  position: absolute;
+  content: "";
+  left: 15px;
+  top: 30px;
+}
+
+.main-navigation-user-list__icon-basket {
+  position: absolute;
+  content: "";
+  left: 15px;
+  top: 30px;
 }

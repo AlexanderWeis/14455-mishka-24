@@ -4,15 +4,10 @@
 }
 
 .product-card__link {
+  @include fonts($main-font, 17px, 24px, $fontWeightBold, $color-text-bold);
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -23,14 +18,9 @@
 }
 
 .product-card__price {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
+  @include fonts($main-font, 15px, 24px, $fontWeightBold, $color-text-bold);
   display: flex;
   align-items: center;
-  color: #000000;
 }
 
 .product-card__description {

@@ -6,6 +6,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
+  align-items: center;
 }
 
 .social-list__item:not(:last-child) {

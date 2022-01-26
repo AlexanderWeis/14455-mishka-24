@@ -1,4 +1,5 @@
 .deals-list__link {
-  @include fonts($main-font, 15px, 24px, 700, $color-text-bold);
+  @include fonts($main-font, 15px, 24px, $fontWeightBold, $color-text-bold);
   text-decoration: none;
+  display: none;
 }

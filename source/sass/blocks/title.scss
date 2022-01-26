@@ -1,5 +1,4 @@
 .title {
-  font-size: 25px;
-  line-height: 30px;
+  @include fonts($main-font, 25px, 30px, $color-text-regular);
   margin: 0;
 }

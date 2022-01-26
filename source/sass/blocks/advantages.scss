@@ -1,5 +1,4 @@
 .advantages {
-  width: 260px;
   // outline: 5px solid rgb(54, 226, 54);
   // outline-offset: -5px;
 }
@@ -15,14 +14,9 @@
 // }
 
 .advantages__heading {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 25px;
-  line-height: 30px;
+  @include fonts($main-font, 25px, 30px, $fontWeightBold, $color-text-bold);
   display: flex;
   align-items: center;
-  color: #000000;
   padding-bottom: 28px;
 }
 
@@ -33,14 +27,10 @@
 }
 
 .advantages__list-item {
+  @include fonts($main-font, 17px, 118%, $fontWeightBold, $color-text-bold);
   padding-bottom: 38px;
   padding-top: 54px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  color: #000000;
-  line-height: 118%;
+  position: relative;
 }
 
 .advantages__list-item--icon1 {

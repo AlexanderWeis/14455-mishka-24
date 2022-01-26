@@ -6,6 +6,7 @@ $desktop-screen: 1150px;
 
 // Colours
 
+$color-white: #ffffff;
 $color-text-bold: #000000;
 $color-text-regular: #444444;
 
@@ -20,7 +21,6 @@ $color-footer-mobile-line: #e5e5e5;
 $color-border: #ececec;
 
 $color-modal-border: #c6c6c6;
-$color-white: #ffffff;
 
 $color-decoration-wave: #f1f1f1;
 $color-decoration-flag-stock: #231f20;
@@ -29,8 +29,10 @@ $color-decoration-map-letter: #6bc6b3;
 $color-background-top-menu: #f9f9f9;
 
 // Fonts
+// => @include fonts($main-font, 13px, 24px, 400);
+// => @include fonts($main-font, 17px, 141%, $fontWeightBold);
 
-$main-font: "Open Sans", sans-serif;
+$main-font: "Open Sans", "Arial", sans-serif;
 $fontStyle: normal;
 $fontWeight: 400;
 $fontWeightBold: 700;

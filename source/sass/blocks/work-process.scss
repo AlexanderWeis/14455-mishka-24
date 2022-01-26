@@ -1,18 +1,12 @@
 .work-process {
-  border: solid 1px $color-border;
-  width: 320px;
+  // border: solid 1px $color-border;
   margin-bottom: 58px;
 }
 
 .work-process__heading {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
+  @include fonts($main-font, 17px, 24px, $fontWeightBold, $color-text-bold);
   display: flex;
   align-items: center;
-  color: #000000;
   position: relative;
   margin-left: 91px;
 
@@ -25,7 +19,7 @@
 }
 
 .work-process__text {
-  @include fonts($main-font, 13px, 24px, 400);
+  @include fonts($main-font, 13px, 24px, fontWeight);
   padding-left: 34px;
   margin-bottom: 41px;
 }
