@@ -1,0 +1,58 @@
+.advantages {
+  // outline: 5px solid rgb(54, 226, 54);
+  // outline-offset: -5px;
+}
+
+// .advantages {
+//   color: $color;
+//   @media (min-width: 768px) {
+//     color: $two;
+//   }
+//   @media (min-width: 1200px) {
+//     color:$three;
+//   }
+// }
+
+.advantages__heading {
+  @include fonts($main-font, 25px, 30px, $fontWeightBold, $color-text-bold);
+  display: flex;
+  align-items: center;
+  padding-bottom: 28px;
+}
+
+.advantages__list {
+  // list-style-type: none;
+  @include lists;
+  position: relative;
+}
+
+.advantages__list-item {
+  @include fonts($main-font, 17px, 118%, $fontWeightBold, $color-text-bold);
+  padding-bottom: 38px;
+  padding-top: 54px;
+  position: relative;
+}
+
+.advantages__list-item--icon1 {
+  background: url("../img/icons/icon-1-flowers.svg") no-repeat 0% 0%;
+}
+
+.advantages__list-item--icon2 {
+  background: url("../img/icons/icon-2-tangle.svg") no-repeat 0% 0%;
+}
+
+.advantages__list-item--icon3 {
+  background: url("../img/icons/icon-3-money.svg") no-repeat 0% 0%;
+}
+
+.advantages__list-item--icon4 {
+  background: url("../img/icons/icon-4-rocket.svg") no-repeat 0% 0%;
+}
+
+.advantages__list-item--icon5 {
+  background: url("../img/icons/icon-5-heart.svg") no-repeat 0% 0%;
+}
+
+.advantages__list-item--icon6 {
+  background: url("../img/icons/icon-6-gift.svg") no-repeat 0% 0%;
+}

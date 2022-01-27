@@ -1,0 +1,43 @@
+.product-card {
+  border: solid 1px $color-border;
+  margin-bottom: 30px;
+}
+
+.product-card__link {
+  @include fonts($main-font, 17px, 24px, $fontWeightBold, $color-text-bold);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card__item-description {
+  @include fonts($main-font, 13px, 30px, 400, $color-text-regular);
+  margin: 0;
+}
+
+.product-card__price {
+  @include fonts($main-font, 15px, 24px, $fontWeightBold, $color-text-bold);
+  display: flex;
+  align-items: center;
+}
+
+.product-card__description {
+  padding: 0 28px;
+}
+
+.product-card__cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+
+.product-card__button {
+  border: none;
+  background-color: transparent;
+}
+
+.product-card__img {
+  margin-bottom: 28px;
+}

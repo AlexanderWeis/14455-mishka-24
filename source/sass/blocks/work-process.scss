@@ -1,0 +1,29 @@
+.work-process {
+  // border: solid 1px $color-border;
+  margin-bottom: 58px;
+}
+
+.work-process__heading {
+  @include fonts($main-font, 17px, 24px, $fontWeightBold, $color-text-bold);
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 91px;
+
+  &::before {
+    @include pseudo(32px, 22px);
+    top: 10px;
+    left: -60px;
+    background: url("../img/icons/video.svg") no-repeat;
+  }
+}
+
+.work-process__text {
+  @include fonts($main-font, 13px, 24px, fontWeight);
+  padding-left: 34px;
+  margin-bottom: 41px;
+}
+
+.work-process__button {
+  margin-bottom: 100px;
+}

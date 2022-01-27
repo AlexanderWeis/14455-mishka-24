@@ -1,0 +1,53 @@
+// .testimonials {}
+
+.testimonials__heading {
+  @include fonts($main-font, 25px, 30px, $fontWeightBold, $color-text-bold);
+}
+
+.testimonials__text {
+  @include fonts($main-font, 15px, 30px, $fontWeight, $color-text-regular);
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__information-about-author {
+  @include fonts($main-font, 17px, 141%, $fontWeightBold, $color-text-bold);
+}
+
+.testimonials__list-item {
+  margin: 0;
+  display: block;
+}
+
+.testimonials__author-name {
+  font-style: normal;
+}
+
+.testimonials__author-instagram-nickname {
+  @include fonts($main-font, 17px, 176%, $fontWeight, $color-text-regular);
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__slider-control {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 38px;
+}
+
+.testimonials__navigation-button--current {
+  display: block;
+}
+
+.testimonials__navigation-button {
+  height: 52px;
+  width: 150px;
+  background: url("../img/icons/huge-arrow-left.svg") no-repeat;
+  background-position: center center;
+  border: 1px solid $color-border;
+}
+
+.testimonials__navigation-button--next {
+  transform: rotate(180deg);
+  border-right: none;
+}

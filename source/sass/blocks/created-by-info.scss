@@ -1,0 +1,30 @@
+.created-by-info {
+  position: relative;
+  text-align: center;
+  margin-top: 57px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.created-by-info__link {
+  @include fonts($main-font, 19px, 95%, $fontWeightBold, $color-text-bold);
+  text-decoration: none;
+  position: relative;
+}
+
+.created-by-info__link::after {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 1px;
+  top: -30px;
+  left: -50px;
+  background: $color-footer-mobile-line;
+}
+
+.created-by-info__icon {
+  width: 27px;
+  height: 34px;
+}

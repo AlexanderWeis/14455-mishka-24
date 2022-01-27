@@ -1,0 +1,50 @@
+.featured__header {
+  @include fonts($main-font, 25px, 120%, $fontWeightBold);
+  color: #000000;
+}
+
+.featured__subtitle {
+  @include fonts($main-font, 17px, 118%, $fontWeightBold, $color-accent);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.featured__description {
+  @include fonts($main-font, 15px, 160%, $fontWeight, $color-text-regular);
+  color: $color-text-regular;
+}
+
+.featured__table-heading {
+  @include fonts($main-font, 15px, 133%, $fontWeight, $color-text-regular);
+  text-align: left;
+}
+
+.featured__table-description {
+  @include fonts($main-font, 15px, 133%, $fontWeight, $color-text-regular);
+  padding-left: 29px;
+}
+
+.featured__product-image {
+  padding: 0;
+  margin-top: 28px;
+}
+
+.featured__product-price {
+  @include fonts($main-font, 17px, 141%, $fontWeightBold, $color-text-regular);
+  padding: 25px 0;
+  text-align: center;
+  margin: 0;
+}
+
+.featured__table-row {
+  border-bottom: 1px solid $color-border;
+}
+
+.featured__img {
+  margin: 0;
+}
+
+.featured__button {
+  background: $color-white;
+  border: 2px solid $color-text-regular;
+}

@@ -1,0 +1,89 @@
+.header {
+  @include fonts($main-font, 27px, 111%, $fontWeightBold, $color-text-bold);
+  display: block;
+  text-align: center;
+  // background-image: url("../img/content/hero-mobile.jpg");
+  // background-repeat: no-repeat;
+  // background-size: auto;
+  // margin-bottom: 31px;
+}
+
+.header__title {
+  @include fonts($main-font, 27px, 111%, $fontWeightBold, $color-text-bold);
+  margin-top: 0;
+  margin-bottom: 17px;
+  align-items: center;
+  background-color: $color-decoration-wave;
+  padding: 73px 22px;
+  text-align: center;
+}
+
+.header__title--image {
+  background-image: url("../img/content/hero-mobile.jpg");
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 100px;
+}
+
+.header__list {
+  @include lists();
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+}
+
+.header__list-item {
+  @include lists();
+  position: relative;
+}
+
+.header__link {
+  @include fonts($main-font, 19px, 126%, $fontWeightBold, $color-white);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 150px;
+  width: 320px;
+  margin: 0 auto;
+  // outline: 2px solid red;
+  // outline-offset: -2px;
+}
+
+.header__link--interior {
+  position: absolute;
+  content: "";
+  left: 800px;
+  top: 20px;
+  // background: url("../img/icons/interior.svg.png") no-repeat 90% 40%;
+}
+
+.header__link--toy {
+  position: absolute;
+  content: "";
+  left: 790px;
+  top: 20px;
+  // background: url("../img/icons/toy-svg.svg") no-repeat 90% 40%;
+}
+
+.header__link--light-green {
+  background-color: $color-accent;
+}
+
+.header__link--dark-green {
+  background-color: $color-accent-dark;
+}
+
+.header__heading {
+  @include fonts($main-font, 27px, 30px, $fontWeightBold, $color-text-bold);
+  margin: 0;
+  margin-bottom: 30px;
+  background-color: $color-decoration-wave;
+  padding: 73px 42px;
+  text-align: center;
+}

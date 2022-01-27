@@ -1,0 +1,54 @@
+.contacts__heading {
+  @include fonts($main-font, 25px, 120%, $fontWeightBold, $color-text-bold);
+  padding-bottom: 28px;
+  margin: 0;
+}
+
+.contacts__table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts__table-heading {
+  @include fonts($main-font, 14px, 30px, $fontWeight, $color-text-regular);
+  display: flex;
+}
+
+.contacts__table-row {
+  padding-bottom: 20px;
+}
+
+
+.contacts__table-email {
+  @include fonts($main-font, 14px, 30px, $fontWeight, $color-text-regular);
+  position: relative;
+  width: 183px;
+  padding-left: 30px;
+}
+
+.contacts__table-email::after {
+  position: absolute;
+  content: "";
+  background-color: $color-interactive-elements;
+  left: 30px;
+  top: 0;
+  height: 1px;
+  width: 170px;
+}
+
+.contacts__map {
+  position: relative;
+  z-index: 1;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 67px;
+  height: 100px;
+  background: url("../img/icons/map-pin.svg");
+}
