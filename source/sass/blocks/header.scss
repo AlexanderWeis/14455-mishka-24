@@ -43,7 +43,7 @@
 }
 
 .header__title--image {
-  background-image: url("../img/content/hero-mobile.jpg");
+  // background-image: url("../img/content/hero-mobile.jpg");
   background-position: 40% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,17 +101,37 @@
 .header__link--interior {
   position: absolute;
   content: "";
-  left: 800px;
-  top: 20px;
+  left: 400px;
+  top: 950px;
   // background: url("../img/icons/interior.svg.png") no-repeat 90% 40%;
+
+  @media (min-width: $tablet-screen) {
+    left: 400px;
+    top: 1080px;
+  }
+
+  @media (min-width: $desktop-screen) {
+    left: 900px;
+    top: 1080px;
+  }
 }
 
 .header__link--toy {
   position: absolute;
   content: "";
-  left: 790px;
-  top: 20px;
+  left: 390px;
+  top: 1055px;
   // background: url("../img/icons/toy-svg.svg") no-repeat 90% 40%;
+
+  @media (min-width: $tablet-screen) {
+    left: 770px;
+    top: 1080px;
+  }
+
+  @media (min-width: $desktop-screen) {
+    left: 1380px;
+    top: 1080px;
+  }
 }
 
 .header__link--light-green {
