@@ -1,17 +1,24 @@
 .created-by-info {
-  position: relative;
-  text-align: center;
-  margin-top: 57px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+
+.created-by-info__icon {
+  width: 27px;
+  height: 34px;
+}
+
+.created-by-info__text {
+  @include fonts($main-font, 19px, 18px, $fontWeightBold, $color-text-bold);
+  margin: 0;
+  margin-right: 25px;
 }
 
 .created-by-info__link {
   @include fonts($main-font, 19px, 95%, $fontWeightBold, $color-text-bold);
   text-decoration: none;
-  position: relative;
+  padding: 31px 0;
 }
 
 .created-by-info__link::after {
@@ -22,9 +29,4 @@
   top: -30px;
   left: -50px;
   background: $color-footer-mobile-line;
-}
-
-.created-by-info__icon {
-  width: 27px;
-  height: 34px;
 }

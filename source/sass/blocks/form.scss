@@ -2,6 +2,33 @@
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-screen) {
+    padding: 50px 0;
+  }
+
+  @media (min-width: $desktop-screen) {
+    padding: 50px 175px 50px 45px;
+  }
+}
+
+.form__form-group .container {
+  @media (min-width: $tablet-screen) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 87px;
+  }
+}
+
+.form__form-group:nth-child(odd) {
+  @media (min-width: $tablet-screen) {
+    background-color: $color-decoration-wave;
+  }
+}
+
+.form__category--comments {
+  margin-bottom: 17px;
 }
 
 .form__form-title {
@@ -9,7 +36,31 @@
   color: $color-accent;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-screen) {
+    float: left;
+  }
 }
+
+.form__list--color {
+  @media (min-width: $tablet-screen) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__category--text {
+  .form__form-control {
+    margin-bottom: 17px;
+    padding-left: 0;
+  }
+
+  .form__form-input {
+    margin-left: -5px;
+    border-bottom: 2px solid $color-text-regular;
+  }
+}
+
 
 .form__form-title--greenline {
   position: relative;
@@ -31,10 +82,28 @@
   @include lists();
 }
 
+.form__form-item {
+  @media (min-width: $tablet-screen) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.form__list--personal {
+  .form__form-control {
+    margin-right: 20px;
+  }
+}
+
 .form__form-control {
   @include fonts($main-font, 17px, 18px, $fontWeightBold, $color-text-bold);
-  align-items: center;
-  margin-bottom: 17px;
+  margin-bottom: 24px;
+  display: block;
+  padding-left: 60px;
+
+  @media (min-width: $tablet-screen) {
+    font-size: 19px;
+  }
 }
 
 .form__form-control--underline {
@@ -52,25 +121,16 @@
   background-color: $color-text-bold;
 }
 
-.form__form-input {
-  border: none;
-
-  &::placeholder {
-    @include fonts($main-font, 17px, 18px, $fontWeight, $color-text-bold);
-    opacity: 0.3;
-    margin-top: 17px;
-    padding-right: 17px;
-    padding-top: 17px;
-  }
-}
 // Цвет заполняемого текста в сообщении
 .form__form-input--textarea {
   @include fonts($main-font, 19px, 18px, $fontWeight, $color-text-bold);
   min-height: 142px;
   width: 100%;
   border: 2px solid $color-text-bold;
-  padding: 17px;
+  padding: 17px 17px 0 17px;
+  margin-bottom: 0;
 }
+
 // Цвет заполняемого текста в формах
 .form__form-input--text {
   @include fonts($main-font, 19px, 18px, $fontWeight, $color-text-regular);
@@ -87,10 +147,6 @@
   height: 1px;
   width: 100px;
   background-color: $color-text-bold;
-}
-
-.form__form-input[type="text"] {
-  width: 100%;
 }
 
 // Цвет заполняемого текста в телефоне
@@ -113,7 +169,15 @@
 
 .form__form-required-info {
   @include fonts($main-font, 14px, 16px, $fontWeight);
+  margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-screen) {
+    margin-bottom: 0;
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form__form-label {
@@ -149,7 +213,37 @@
   margin-bottom: 23px;
 }
 
-
 .form__form-input--сheckbox:checked {
   background-color: $color-white;
+}
+
+.form__form-input[type="text"] {
+  width: 100%;
+}
+
+.form__bottom {
+  @media (min-width: $tablet-screen) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-screen) {
+    padding: 0 225px;
+  }
+}
+
+.form__form-input {
+  border: none;
+  margin-bottom: 22px;
+  padding: 10px 5px;
+
+  &::placeholder {
+    @include fonts($main-font, 17px, 18px, $fontWeight, $color-text-bold);
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-screen) {
+    font-size: 19px;
+  }
 }

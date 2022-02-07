@@ -1,19 +1,69 @@
-.contacts__heading {
-  @include fonts($main-font, 25px, 120%, $fontWeightBold, $color-text-bold);
-  padding-bottom: 28px;
-  margin: 0;
+.contacts {
+  min-width: 320px;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-screen) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 175px;
+  }
+
+  @media (min-width: $desktop-screen) {
+    margin: 0 auto;
+    max-width: $desktop-screen;
+  }
 }
 
 .contacts__table {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // flex-wrap: wrap;
+  margin-bottom: 62px;
+}
+
+.contacts__table-controler {
+  @media (min-width: $tablet-screen) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-screen) {
+    flex-direction: column;
+  }
+}
+
+.contacts__table-text {
+  @include fonts($main-font, 14px, 30px, $fontWeight);
+
+  @media (min-width: $tablet-screen) {
+    font-size: 17px;
+  }
+}
+
+.contacts__table-text:last-child {
+  width: 230px;
 }
 
 .contacts__table-heading {
   @include fonts($main-font, 14px, 30px, $fontWeight, $color-text-regular);
-  display: flex;
+  // position: relative;
+  // margin-bottom: 30px;
+  min-width: 52px;
+  vertical-align: top;
+
+  @media (min-width: $tablet-screen) {
+    &::after {
+      @include pseudo(47px, 81px);
+      right: 0;
+      background: url("../img/icons/s.svg"); // Flag.svg
+    }
+  }
+
+  @media (min-width: $desktop-screen) {
+    &::after {
+      left: -100px;
+    }
+  }
 }
 
 .contacts__table-row {
@@ -38,17 +88,60 @@
   width: 170px;
 }
 
+.contacts__map-container {
+  position: relative;
+}
+
 .contacts__map {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
   z-index: 1;
+
+  @media (min-width: $desktop-screen) {
+    grid-row: span 2;
+  }
 }
 
 .contacts__map-pin {
   position: absolute;
+  content: "";
   z-index: 5;
-  top: 0;
-  right: 0;
+  top: 153px;
+  right: 118px;
   width: 67px;
   height: 100px;
   background: url("../img/icons/map-pin.svg");
+}
+
+.contacts__link-button {
+  align-self: center;
+}
+
+.contacts__heading {
+  @include fonts($main-font, 25px, 120%, $fontWeightBold, $color-text-bold);
+  position: relative;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-screen) {
+    &::after {
+      @include pseudo(47px, 81px);
+      right: 0;
+      background: url("../img/flag.svg");
+    }
+  }
+
+  @media (min-width: $desktop-screen) {
+    &::after {
+      left: -100px;
+    }
+  }
+}
+
+.contacts__link {
+  font: inherit;
+  color: $color-text-regular;
+  text-decoration: none;
 }

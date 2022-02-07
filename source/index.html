@@ -20,7 +20,7 @@
   <!-- Section #: Main menu -->
 
   <header class="top-menu">
-    <div class="container">
+    <div class="container top-menu__container">
       <div class="logo">
         <a href="index.html" class="logo__link">
           <img class="logo__link-image" src="img/logos/mishka-logo-mobile.svg" alt="Логотип магазина Мишка." width="86"
@@ -33,7 +33,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-navigation__wrapper">
-            <ul class="main-navigation__list">
+            <ul class="main-navigation__list main-navigation__list-header">
               <li class="main-navigation__list-item main-navigation__list-item--current">
                 <a class="main-navigation__link">Главная</a>
               </li>
@@ -91,9 +91,12 @@
     <!-- Section #: Header -->
 
     <section class="header">
-        <h2 class="header__title header__title--image">
-          Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома
-        </h2>
+      <div class="container header__container">
+          <h2 class="header__title header__title--image">
+            Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома
+          </h2>
+      </div>
+      <div class="container header__list-container">
       <ul class="header__list">
         <li class="header__list-item header__link--light-green">
           <a class="header__link" href="#">Предметы интерьера</a>
@@ -114,43 +117,48 @@
             </svg>
         </li>
       </ul>
+    </div>
     </section>
 
     <!-- Section #: Featured products -->
 
     <section class="featured">
       <div class="container">
-        <h2 class="featured__header">Вязаные корзинки</h2>
-        <p class="featured__subtitle">Товар недели</p>
-        <p class="featured__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести
-          расцветках и трёх размерах.
-        </p>
-        <table class="featured__table featured-table">
-          <caption class="featured-table__caption">
-            <h2 class="visually-hidden">Информация о товаре</h2>
-          </caption>
-          <tbody>
-            <tr class="featured__table-row">
-              <th class="featured__table-heading">Цвет:</th>
-              <td class="featured__table-description">Тиффани/серый</td>
-            </tr>
-            <tr class="featured__table-row">
-              <th class="featured__table-heading">Диаметр:</th>
-              <td class="featured__table-description">25 см.</td>
-            </tr>
-            <tr class="featured__table-row">
-              <th class="featured__table-heading">Высота:</th>
-              <td class="featured__table-description">15 см.</td>
-            </tr>
-          </tbody>
-        </table>
-        <figure class="featured__img">
-          <img src="img/content/triple-set-mobile-1.jpg" class="featured__product-image" alt="Вязанные корзинки."
-            width="260" height="315" />
-          <p class="featured__product-price">Цена: 990 руб.</p>
-        </figure>
-        <a class="link-contact-button" href="#">Заказать</a>
+        <div class="featured__top">
+          <h2 class="featured__header featured__heading">Вязаные корзинки</h2>
+          <p class="featured__subtitle">Товар недели</p>
+        </div>
+        <div class="featured__bottom">
+          <p class="featured__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести
+            расцветках и трёх размерах.
+          </p>
+          <table class="featured__table featured-table">
+            <caption class="featured-table__caption">
+              <h2 class="visually-hidden">Информация о товаре</h2>
+            </caption>
+            <tbody>
+              <tr class="featured__table-row">
+                <th class="featured__table-heading">Цвет:</th>
+                <td class="featured__table-description">Тиффани/серый</td>
+              </tr>
+              <tr class="featured__table-row">
+                <th class="featured__table-heading">Диаметр:</th>
+                <td class="featured__table-description">25 см.</td>
+              </tr>
+              <tr class="featured__table-row">
+                <th class="featured__table-heading">Высота:</th>
+                <td class="featured__table-description">15 см.</td>
+              </tr>
+            </tbody>
+          </table>
+          <figure class="featured__img">
+            <img class="featured__product-image" src="img/content/triple-set-mobile-1.jpg" alt="Вязанные корзинки."
+              width="260" height="315" />
+            <p class="featured__product-price">Цена: 990 руб.</p>
+          </figure>
+          <a class="link-contact-button" href="#">Заказать</a>
+        </div>
       </div>
     </section>
 
@@ -183,7 +191,8 @@
           </ul>
         </div>
         <div class="testimonials">
-          <p class="testimonials__heading">Отзывы</p>
+          <div class="slider">
+          <h3 class="testimonials__heading">Отзывы</h3>
           <div class="testimonials-list slider-list">
             <!-- 1st testimonial -->
             <blockquote class="testimonials__list-item slider-list__list-item">
@@ -234,17 +243,18 @@
 
             <!-- Slider control elements -->
             <div class="testimonials__slider-control">
-              <button class="testimonials__navigation-button testimonials__navigation-button--current" type="button">
+              <button class="slider__nav-button" type="button">
                 <span class="visually-hidden">Предыдущий продукт</span>
               </button>
-              <button class="testimonials__navigation-button testimonials__navigation-button--next" type="button">
+              <button class="slider__nav-button slider__nav-button--next" type="button">
                 <span class="visually-hidden">Следующий продукт</span>
               </button>
             </div>
           </div>
-          <a class="link-contact-button" href="#">Написать</a>
+          <a class="link-contact-button slider__link-button" href="#">Написать</a>
         </div>
       </div>
+    </div>
     </section>
 
     <!-- Section #: Contacts -->
@@ -254,14 +264,14 @@
       <div class="container">
         <p class="contacts__heading">Контакты</p>
         <table class="contacts__table">
-          <tbody>
+          <tbody class="contacts__table-controler>
             <tr class="contacts__table-row">
-              <th class="contacts__table-heading">e-mail:</th>
-              <td class="contacts__table-email"><a class="email-link" href="mailto:info@mimimishkashop.ru?subject=Вопрос о мишкам">info@mimimishkashop.ru</></td>
+              <th class="contacts__table-heading contacts__table-text">e-mail:</th>
+              <td class="contacts__table-email contacts__table-text"><a class="email-link" href="mailto:info@mimimishkashop.ru?subject=Вопрос о мишкам">info@mimimishkashop.ru</></td>
             </tr>
             <tr class="contacts__table-row">
-              <th class="contacts__table-heading">адрес:</th>
-              <td class="contacts__table-email">
+              <th class="contacts__table-heading contacts__table-text">адрес:</th>
+              <td class="contacts__table-email contacts__table-text">
                 г. Санкт-Петербург<br />ул. Большая Конюшенная<br />д. 19/8,
                 офис 101
               </td>
@@ -281,7 +291,7 @@
   <!-- Block 3: Footer -->
   <footer class="footer">
     <h2 class="visually-hidden">Подвал</h2>
-    <div class="container">
+    <div class="container footer__container">
       <div class="footer__logo logo--hidden">
         <a href="#" class="logo__link">
           <img class="logo__logotypy-image" src="img/logos/mishka-logo-mobile.svg" alt="Логотип магазина Мишка."
@@ -321,7 +331,8 @@
         </li>
       </ul>
       <div class="created-by-info">
-        <a href="https://htmlacademy.ru/" class="created-by-info__link">
+        <p class="created-by-info__text">Разработано</p>
+        <a class="created-by-info__link" href="https://htmlacademy.ru/">
           Разработано
           <svg class="created-by-info__icon" width="27" height="35" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 60 60">
@@ -334,14 +345,19 @@
   </footer>
 
   <!-- Modal window -->
-  <div class="modal-container">
-    <div class="container">
-      <div class="modal">
+  
+  <!-- 
+    modal--open – открытие модального окна
+    modal-close – закрытие модального окна
+  -->
+  
+  <div class="modal">
+    <div class="modal__container">
+      <div class="container">
         <section class="modal__content">
-          <h2 class="modal__title">Добавить в корзину</h2>
-
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            Выберите размер:
+            <h2 class="modal__title">Добавить в корзину</h2>
+            <p class="modal-form__radio-heading">Выберите размер:</p>
             <label class="modal-form__label" for="small">
               <input class="modal-form__form-control modal-form__form-control--checkbox" id="small" type="radio"
                 name="size" value="small" />

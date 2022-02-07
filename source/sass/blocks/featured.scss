@@ -1,47 +1,125 @@
+.featured__top {
+  position: relative;
+
+  @media (min-width: $tablet-screen) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-screen) {
+    padding: 0 175px;
+  }
+}
+
+.featured__bottom {
+  @media (min-width: $tablet-screen) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr min-content 56px;
+    column-gap: 42px;
+  }
+
+  @media (min-width: $desktop-screen) {
+    padding: 0 0 0 175px;
+  }
+}
+
+.featured-table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-screen) {
+    margin-bottom: 110px;
+  }
+}
+
+.featured__heading {
+  margin-bottom: 5px;
+}
+
 .featured__header {
-  @include fonts($main-font, 25px, 120%, $fontWeightBold);
-  color: #000000;
+  @include fonts($main-font, 25px, 120%, $fontWeightBold, $color-text-bold);
 }
 
 .featured__subtitle {
   @include fonts($main-font, 17px, 118%, $fontWeightBold, $color-accent);
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-screen) {
+    max-width: 130px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-screen) {
+    position: absolute;
+    left: 0;
+  }
 }
 
 .featured__description {
   @include fonts($main-font, 15px, 160%, $fontWeight, $color-text-regular);
-  color: $color-text-regular;
+  margin: 0;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-screen) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .featured__table-heading {
   @include fonts($main-font, 15px, 133%, $fontWeight, $color-text-regular);
   text-align: left;
+  padding: 0;
+  padding-right: 30px;
 }
 
 .featured__table-description {
   @include fonts($main-font, 15px, 133%, $fontWeight, $color-text-regular);
-  padding-left: 29px;
-}
-
-.featured__product-image {
-  padding: 0;
-  margin-top: 28px;
+  padding-left: 25px;
+  text-align: left;
 }
 
 .featured__product-price {
   @include fonts($main-font, 17px, 141%, $fontWeightBold, $color-text-regular);
-  padding: 25px 0;
+  padding: 20px 0 24px 0;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-screen) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .featured__table-row {
   border-bottom: 1px solid $color-border;
+  height: 40px;
 }
 
 .featured__img {
   margin: 0;
+
+  @media (min-width: $tablet-screen) {
+    grid-column: 2/3;
+    grid-row: 1/5;
+  }
+}
+
+.featured__product-image {
+  @media (min-width: $tablet-screen) {
+    width: 334px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-screen) {
+    margin-top: -110px;
+    width: 525px;
+    height: 636px;
+  }
 }
 
 .featured__button {

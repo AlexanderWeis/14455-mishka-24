@@ -2,12 +2,13 @@
 
 .testimonials__heading {
   @include fonts($main-font, 25px, 30px, $fontWeightBold, $color-text-bold);
+  margin-bottom: 14px;
 }
 
 .testimonials__text {
   @include fonts($main-font, 15px, 30px, $fontWeight, $color-text-regular);
-  display: flex;
-  align-items: center;
+  margin: 0;
+  margin-bottom: 34px;
 }
 
 .testimonials__information-about-author {
@@ -16,23 +17,28 @@
 
 .testimonials__list-item {
   margin: 0;
-  display: block;
 }
 
 .testimonials__author-name {
   font-style: normal;
+  display: block;
 }
 
 .testimonials__author-instagram-nickname {
   @include fonts($main-font, 17px, 176%, $fontWeight, $color-text-regular);
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .testimonials__slider-control {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 38px;
+  justify-content: center;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-screen) {
+    margin-top: -55px;
+    justify-content: flex-end;
+  }
 }
 
 .testimonials__navigation-button--current {

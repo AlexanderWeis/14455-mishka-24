@@ -1,14 +1,16 @@
 .container {
-  width: 320px;
+  min-width: 320px;
   padding: 0 30px;
-  margin: 0 auto;
+  // text-align: center;
+  // ломается выравнивание менюкши
+  @media (min-width: $tablet-screen) {
+    min-width: 768px;
+    padding: 0 50px;
+  }
 
-  // @media (min-width: $tablet-screen) {
-  //   width: $tablet-screen;
-  //   padding: 0 50px;
-  // }
-
-  // @media (min-width: $desktop-screen) {
-  //   width: $desktop-screen;
-  // }
+  @media (min-width: $desktop-screen) {
+    min-width: 1150px;
+    margin: 0 auto;
+    max-width: $desktop-screen;
+  }
 }

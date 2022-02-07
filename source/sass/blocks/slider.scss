@@ -1,0 +1,47 @@
+.slider {
+  position: relative;
+
+  @media (min-width: $desktop-screen) {
+    padding: 0 0 0 175px;
+  }
+}
+
+.slider__link-button {
+  @media (min-width: $tablet-screen) {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.slider-list__list-item {
+  display: none;
+  margin-bottom: 32px;
+}
+
+.slider-list__list-item--active {
+  display: block;
+}
+
+.slider__nav-button {
+  width: 130px;
+  height: 52px;
+  background: url("../img/icons/huge-arrow-left.svg") no-repeat;
+  background-position: center center;
+  border: 1px solid $color-border;
+
+  @media (min-width: $tablet-screen) {
+    width: 100px;
+    border: none;
+  }
+}
+
+.slider__nav-button--next {
+  transform: rotate(180deg);
+  border-right: none;
+
+  @media (min-width: $tablet-screen) {
+    width: 100px;
+    border: none;
+  }
+}

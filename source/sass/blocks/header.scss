@@ -1,21 +1,45 @@
 .header {
   @include fonts($main-font, 27px, 111%, $fontWeightBold, $color-text-bold);
-  display: block;
-  text-align: center;
+  // display: block;
+  // text-align: center;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
   // background-image: url("../img/content/hero-mobile.jpg");
   // background-repeat: no-repeat;
   // background-size: auto;
   // margin-bottom: 31px;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 289px;
+  background-image: url("../img/content/hero-mobile.jpg");
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-screen) {
+    min-height: 627px;
+  }
+}
+
 .header__title {
   @include fonts($main-font, 27px, 111%, $fontWeightBold, $color-text-bold);
-  margin-top: 0;
-  margin-bottom: 17px;
-  align-items: center;
-  background-color: $color-decoration-wave;
-  padding: 73px 22px;
+  margin: 0;
+  padding: 73px 0;
   text-align: center;
+  // background-color: $color-decoration-wave;
+
+  @media (min-width: $tablet-screen) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-screen) {
+    padding: 100px 0;
+  }
 }
 
 .header__title--image {
@@ -30,29 +54,48 @@
 
 .header__list {
   @include lists();
-  padding: 0;
-  margin: 0;
-  min-width: 320px;
+
+  @media (min-width: $tablet-screen) {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+  }
 }
 
 .header__list-item {
-  @include lists();
-  position: relative;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-screen) {
+    flex-grow: 1;
+    padding: 0 36px;
+    min-width: 334px;
+  }
+
+  @media (min-width: $desktop-screen) {
+    padding: 0 50px;
+    min-width: 525px;
+  }
+}
+
+.header__list-item:first-child {
+  background-color: $color-accent;
+}
+
+.header__list-item:last-child {
+  background-color: $color-accent-dark;
 }
 
 .header__link {
   @include fonts($main-font, 19px, 126%, $fontWeightBold, $color-white);
   display: block;
-  padding-top: 24px;
-  padding-bottom: 31px;
+  max-width: 130px;
+  padding: 24px 0 28px 0;
   text-decoration: none;
-  text-align: left;
-  padding-left: 30px;
-  padding-right: 150px;
-  width: 320px;
-  margin: 0 auto;
-  // outline: 2px solid red;
-  // outline-offset: -2px;
+
+  @media (min-width: $tablet-screen) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .header__link--interior {
@@ -86,4 +129,8 @@
   background-color: $color-decoration-wave;
   padding: 73px 42px;
   text-align: center;
+}
+
+.header__list-container {
+  padding: 0;
 }

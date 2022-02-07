@@ -4,6 +4,22 @@
   padding-bottom: 32px;
 }
 
+.footer__container {
+  @media (min-width: $tablet-screen) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .footer__logo {
   display: none;
+  margin-left: 0;
+
+  @media (min-width: $tablet-screen) {
+    display: block;
+    width: 100px;
+    height: 34px;
+    background: url("../img/logos/mishka-logo-mobile.svg") 50% 50%;
+  }
 }

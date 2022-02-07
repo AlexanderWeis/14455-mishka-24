@@ -1,4 +1,18 @@
 .order-form__description {
-  @include fonts($main-font, 13px, 24px, 400);
-  margin-bottom: 29px;
+  @include fonts($main-font, 13px, 24px, $fontWeight);
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-screen) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-screen) {
+    padding: 0 175px;
+  }
+}
+
+.order-form {
+  margin-bottom: 55px;
 }

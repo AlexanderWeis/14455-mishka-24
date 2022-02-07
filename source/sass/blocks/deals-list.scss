@@ -1,5 +1,23 @@
+.deals-list {
+  display: none;
+
+  @media (min-width: $desktop-screen) {
+    display: flex;
+    order: 4;
+  }
+}
+
+.deals-list__item {
+  padding: 20px 30px;
+}
+
+.deals-list__item:first-child {
+  @media (min-width: $desktop-screen) {
+    padding-left: 5px;
+  }
+}
+
 .deals-list__link {
   @include fonts($main-font, 15px, 24px, $fontWeightBold, $color-text-bold);
   text-decoration: none;
-  display: none;
 }

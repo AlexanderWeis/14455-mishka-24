@@ -1,29 +1,94 @@
 .work-process {
-  // border: solid 1px $color-border;
   margin-bottom: 58px;
+  padding-bottom: 33px;
 }
 
-.work-process__heading {
-  @include fonts($main-font, 17px, 24px, $fontWeightBold, $color-text-bold);
+.work-process__container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  margin-left: 91px;
+  width: 260px;
+  margin: 0 auto;
+  border: 1px solid $color-border;
+  padding: 22px 0 33px;
 
-  &::before {
-    @include pseudo(32px, 22px);
-    top: 10px;
-    left: -60px;
-    background: url("../img/icons/video.svg") no-repeat;
+  @media (min-width: $tablet-screen) {
+    width: 668px;
+    align-items: start;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-screen) {
+    display: grid;
+    width: 1050px;
+    grid-template-columns: 683px 1fr;
+    column-gap: 80px;
+    padding: 0;
   }
 }
 
 .work-process__text {
   @include fonts($main-font, 13px, 24px, fontWeight);
-  padding-left: 34px;
+  margin: 0;
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-screen) {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .work-process__button {
-  margin-bottom: 100px;
+  padding: 14px 11px;
+}
+
+.work-process__description {
+  padding: 33px 34px 0;
+
+  @media (min-width: $tablet-screen) {
+    padding: 33px 40px 0;
+  }
+
+  @media (min-width: $desktop-screen) {
+    padding: 0;
+    padding-right: 33px;
+  }
+}
+
+.work-process__heading {
+  @include fonts($main-font, 17px, 24px, $fontWeightBold, $color-text-bold);
+  margin: 0;
+  position: relative;
+  margin-left: 91px;
+  margin-bottom: 26px;
+
+  &::before {
+    @include pseudo(32px, 22px);
+    top: 10px;
+    left: 40px;
+    background: url("../img/icons/video.svg") no-repeat;
+  }
+
+  @media (min-width: $tablet-screen) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-screen) {
+    align-self: end;
+    margin-bottom: 28px;
+    padding-left: 0;
+    padding-top: 59px;
+    padding-right: 82px;
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
 }

@@ -3,12 +3,15 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid $color-footer-mobile-line;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style-type: none;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.social-list__item:not(:last-child) {
+.social-list__item {
   margin-right: 41px;
+  padding: 31px 0;
+}
+
+.social-list__item:last-child {
+  margin-right: 0;
 }
